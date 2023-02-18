@@ -5,21 +5,24 @@
 	"name": "Statik",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Pyerter"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/statik/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"pyerter.statik.ExampleMod"
+			"pyerter.statik.Statik"
+		],
+		"client": [
+			"pyerter.statik.StatikClient"
 		],
 		"fabric-datagen": [
-			"pyerter.statik.ExampleModDataGenerator"
+			"pyerter.statik.StatikDataGenerator"
 		]
 	},
 	"mixins": [
