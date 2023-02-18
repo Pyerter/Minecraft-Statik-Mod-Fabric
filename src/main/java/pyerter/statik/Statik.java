@@ -24,9 +24,21 @@ public class Statik implements ModInitializer {
 
 		LOGGER.info("Statik > Beginning initialization");
 
+		// Register item groups
 		ModItemGroup.registerItemGroups();
 
+		// Reigster items
 		ModItems.registerModItems();
+
+		// Register blocks
 		ModBlocks.registerModBlocks();
+	}
+
+	public static void logInfo(String message) {
+		LOGGER.info(MOD_ID + " --> " + message);
+	}
+
+	public static void logDebug(String message) {
+		LOGGER.debug(MOD_ID + " --> " + message);
 	}
 }

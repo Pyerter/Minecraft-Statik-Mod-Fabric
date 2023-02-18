@@ -3,7 +3,10 @@
 	"package": "pyerter.statik.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"ModItemSpecialRecipeMixin",
+		"MidMiningToolMixin",
+		"ModPlayerEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

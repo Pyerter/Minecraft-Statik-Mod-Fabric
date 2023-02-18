@@ -14,6 +14,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import pyerter.statik.Statik;
+import pyerter.statik.block.custom.CaptureChamberBlock;
+import pyerter.statik.block.custom.CaptureChamberProviderBlock;
 import pyerter.statik.item.ModItemGroup;
 
 public class ModBlocks {
@@ -28,6 +30,12 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
                     UniformIntProvider.create(2, 7)),
             ModItemGroup.STATIK);
+
+    public static final Block CAPTURE_CHAMBER = registerBlock("capture_chamber",
+            new CaptureChamberBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().strength(2f).requiresTool()), ModItemGroup.STATIK);
+
+    public static final Block CAPTURE_CHAMBER_PROVIDER = registerBlock("capture_chamber_provider",
+            new CaptureChamberProviderBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).nonOpaque().strength(2f).requiresTool()), ModItemGroup.STATIK);
 
     private static Block registerBlock(String name, Block block, ItemGroup ... groups) {
         registerBlockItem(name, block, groups);

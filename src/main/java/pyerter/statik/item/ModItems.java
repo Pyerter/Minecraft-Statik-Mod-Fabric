@@ -9,12 +9,18 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import pyerter.statik.Statik;
+import pyerter.statik.item.custom.engineering.augment.AugmentedTabletItem;
 
 public class ModItems {
 
     public static final Item SEPHRINE_DUST = registerItemToGroups("sephrine_dust",
-            new Item(new FabricItemSettings()),
-            ModItemGroup.STATIK, ItemGroups.INGREDIENTS);
+            new Item(new FabricItemSettings()), ModItemGroup.STATIK, ItemGroups.INGREDIENTS);
+
+    public static final Item STARMETAL_ALLOY_INGOT = registerItemToGroups("starmetal_alloy_ingot",
+            new Item(new FabricItemSettings()), ModItemGroup.STATIK);
+
+    public static final Item AUGMENTED_TABLET_ITEM = registerItemToGroups("augmented_tablet",
+            new AugmentedTabletItem(new FabricItemSettings().maxCount(1)), ModItemGroup.STATIK);
 
     private static Item registerItemToGroups(String name, Item item, ItemGroup ... groups) {
         Item result = Registry.register(Registries.ITEM, new Identifier(Statik.MOD_ID, name), item);
