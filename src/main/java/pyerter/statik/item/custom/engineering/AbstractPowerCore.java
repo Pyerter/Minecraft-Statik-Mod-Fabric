@@ -33,7 +33,7 @@ public abstract class AbstractPowerCore extends Item implements IChargeable { //
     public static boolean isCoreFuelItem(ItemStack stack) {
         return REGISTERED_CORES.contains(stack.getItem());
     }
-    public static final String CHARGE_NBT_ID = "pootsadditions.core_charge";
+    public static final String CHARGE_NBT_ID = "statik.core_charge";
 
     public AbstractPowerCore(Settings settings) {
         super(settings);

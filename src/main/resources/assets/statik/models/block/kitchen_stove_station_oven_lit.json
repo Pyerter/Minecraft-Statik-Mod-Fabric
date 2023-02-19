@@ -1,0 +1,80 @@
+{
+	"parent": "minecraft:block/cube",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"particle": "statik:block/kitchen_stove_station",
+		"oven_lit": "statik:block/kitchen_stove_station_oven_lit"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 1],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#oven_lit"},
+				"east": {"uv": [4, 0, 7.75, 4], "texture": "#oven_lit"},
+				"south": {"uv": [0, 4, 4, 8], "texture": "#oven_lit"},
+				"west": {"uv": [4, 4, 7.75, 8], "texture": "#oven_lit"},
+				"up": {"uv": [11.75, 3.75, 7.75, 0], "texture": "#oven_lit"},
+				"down": {"uv": [11.75, 3.75, 7.75, 7.5], "texture": "#oven_lit"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 3, 1],
+			"faces": {
+				"north": {"uv": [7.75, 7.5, 11.75, 8.25], "texture": "#oven_lit"},
+				"east": {"uv": [7, 9.5, 7.25, 10.25], "texture": "#oven_lit"},
+				"south": {"uv": [0, 8, 4, 8.75], "texture": "#oven_lit"},
+				"west": {"uv": [7.25, 9.5, 7.5, 10.25], "texture": "#oven_lit"},
+				"up": {"uv": [4, 9, 0, 8.75], "texture": "#oven_lit"},
+				"down": {"uv": [8, 8.75, 4, 9], "texture": "#oven_lit"}
+			}
+		},
+		{
+			"from": [1, 11, 0],
+			"to": [15, 12, 1],
+			"faces": {
+				"north": {"uv": [4, 8, 7.5, 8.25], "texture": "#oven_lit"},
+				"east": {"uv": [7.5, 8, 7.75, 8.25], "texture": "#oven_lit"},
+				"south": {"uv": [8, 9.25, 11.5, 9.5], "texture": "#oven_lit"},
+				"west": {"uv": [8, 9.5, 8.25, 9.75], "texture": "#oven_lit"},
+				"up": {"uv": [3.5, 9.75, 0, 9.5], "texture": "#oven_lit"},
+				"down": {"uv": [7, 9.5, 3.5, 9.75], "texture": "#oven_lit"}
+			}
+		},
+		{
+			"from": [0, 15, 0],
+			"to": [16, 16, 1],
+			"faces": {
+				"north": {"uv": [8, 8.75, 12, 9], "texture": "#oven_lit"},
+				"east": {"uv": [8.25, 9.5, 8.5, 9.75], "texture": "#oven_lit"},
+				"south": {"uv": [0, 9, 4, 9.25], "texture": "#oven_lit"},
+				"west": {"uv": [8.5, 9.5, 8.75, 9.75], "texture": "#oven_lit"},
+				"up": {"uv": [8, 9.25, 4, 9], "texture": "#oven_lit"},
+				"down": {"uv": [12, 9, 8, 9.25], "texture": "#oven_lit"}
+			}
+		},
+		{
+			"from": [0, 16, 15],
+			"to": [16, 18, 16],
+			"faces": {
+				"north": {"uv": [4, 8.25, 8, 8.75], "texture": "#oven_lit"},
+				"east": {"uv": [7.5, 9.5, 7.75, 10], "texture": "#oven_lit"},
+				"south": {"uv": [8, 8.25, 12, 8.75], "texture": "#oven_lit"},
+				"west": {"uv": [7.75, 9.5, 8, 10], "texture": "#oven_lit"},
+				"up": {"uv": [4, 9.5, 0, 9.25], "texture": "#oven_lit"},
+				"down": {"uv": [8, 9.25, 4, 9.5], "texture": "#oven_lit"}
+			}
+		}
+	],
+	"display": {},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4]
+		}
+	]
+}

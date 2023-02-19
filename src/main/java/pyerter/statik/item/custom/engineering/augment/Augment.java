@@ -23,9 +23,9 @@ import java.util.stream.Collectors;
 
 // :)
 public abstract class Augment {
-    public static final String AUGMENT_NBT_ID = "pootsadditions.augments";
-    public static final String AUGMENT_NBT_INDICATOR = "pootsadditions.augment_id";
-    public static final String AUGMENT_NBT_MASK_INDICATOR = "pootsadditions.augment_mask";
+    public static final String AUGMENT_NBT_ID = "statik.augments";
+    public static final String AUGMENT_NBT_INDICATOR = "statik.augment_id";
+    public static final String AUGMENT_NBT_MASK_INDICATOR = "statik.augment_mask";
     public static final Map<String, Augment> stringToAugment = new HashMap<>();
     public static Collection<Augment> getAllAugments() {
         return stringToAugment.values().stream().sorted(Comparator.comparing(Augment::getAugmentID)).collect(Collectors.toList());

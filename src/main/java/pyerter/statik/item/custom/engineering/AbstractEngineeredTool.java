@@ -42,8 +42,8 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public abstract class AbstractEngineeredTool extends Item implements Vanishable, StackDependentAttributeModifierItem, SpecialWeaponWithAbility {
-    public static final String ATTRIBUTES_UPDATED_NBT_ID = "pootsadditions.attributesUpdated";
-    public static final String PREVIOUSLY_WORKING_NBT_ID = "pootsadditions.previouslyWorking";
+    public static final String ATTRIBUTES_UPDATED_NBT_ID = "statik.attributesUpdated";
+    public static final String PREVIOUSLY_WORKING_NBT_ID = "statik.previouslyWorking";
 
     public static final Map<net.minecraft.util.Pair<ToolMaterial, ToolType>, AbstractEngineeredTool> materialToToolDictionary = new HashMap<>();
     public static final List<net.minecraft.util.Pair<ToolMaterial, ToolType>> toolTypePairs = new ArrayList<>();

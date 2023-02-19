@@ -14,7 +14,7 @@ import java.util.List;
 public interface IChargeable {
     public int getMaxCharge();
     public default String getChargeNbtID() {
-        return "pootsadditions.charge";
+        return "statik.charge";
     }
 
     public default int tryCharge(ItemStack stack, int amount) {

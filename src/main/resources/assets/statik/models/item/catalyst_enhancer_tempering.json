@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "statik:item/catalyst_enhancer_tempering"
+  }
+}

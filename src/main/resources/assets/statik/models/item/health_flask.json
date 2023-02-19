@@ -1,0 +1,12 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "statik:item/health_flask_still"
+  },
+  "overrides": [
+    { "predicate": { "charge": 0.000000 }, "model": "statik:item/health_flask" },
+    { "predicate": { "charge": 0.250000 }, "model": "statik:item/health_flask_1" },
+    { "predicate": { "charge": 0.500000 }, "model": "statik:item/health_flask_2" },
+    { "predicate": { "charge": 0.750000 }, "model": "statik:item/health_flask_3" }
+  ]
+}

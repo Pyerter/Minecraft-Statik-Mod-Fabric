@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "item/stone_hoe",
+    "layer1": "statik:item/engineered_hoe_layer_1"
+  }
+}

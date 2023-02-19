@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "statik:item/cookie_cutter_item"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "statik:item/jonathan_hammer_1"
+  }
+}

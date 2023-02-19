@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "statik:item/starmetal_shovel",
+    "layer1": "statik:item/engineered_shovel_layer_1"
+  }
+}

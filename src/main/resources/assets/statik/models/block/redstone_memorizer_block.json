@@ -1,0 +1,33 @@
+{
+	"parent": "minecraft:block/cube",
+	"credit": "Made by Porter",
+	"texture_size": [16, 16],
+	"textures": {
+		"0": "statik:block/redstone_memorizer_block_front",
+		"1": "statik:block/redstone_memorizer_block_side",
+		"2": "statik:block/redstone_memorizer_block_top",
+		"particle": "statik:block/redstone_memorizer_block_front"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

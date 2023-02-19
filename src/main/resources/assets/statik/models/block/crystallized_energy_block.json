@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "render": "translucent",
+  "textures": {
+    "all": "statik:block/crystallized_energy_block"
+  }
+}

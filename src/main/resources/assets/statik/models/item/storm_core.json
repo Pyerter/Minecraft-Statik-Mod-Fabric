@@ -1,0 +1,12 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "statik:item/storm_core"
+  },
+  "overrides": [
+    { "predicate": { "charge": 0.000000 }, "model": "statik:item/storm_core" },
+    { "predicate": { "charge": 0.250000 }, "model": "statik:item/storm_core_1" },
+    { "predicate": { "charge": 0.500000 }, "model": "statik:item/storm_core_2" },
+    { "predicate": { "charge": 0.750000 }, "model": "statik:item/storm_core_3" }
+  ]
+}

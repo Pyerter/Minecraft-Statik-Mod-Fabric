@@ -1,0 +1,10 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "statik:item/malice_scythe_still"
+  },
+  "overrides": [
+    { "predicate": { "charge": 0.000000 }, "model": "statik:item/malice_scythe" },
+    { "predicate": { "charge": 0.250000 }, "model": "statik:item/malice_scythe_animated" }
+  ]
+}
