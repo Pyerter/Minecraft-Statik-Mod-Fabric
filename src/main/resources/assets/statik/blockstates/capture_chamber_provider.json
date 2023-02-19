@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "statik:block/capture_chamber_provider" }
+  }
+}

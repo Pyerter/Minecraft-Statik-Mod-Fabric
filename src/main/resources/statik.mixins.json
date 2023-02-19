@@ -5,7 +5,7 @@
 	"mixins": [
 		"ExampleMixin",
 		"ModItemSpecialRecipeMixin",
-		"MidMiningToolMixin",
+		"ModMiningToolMixin",
 		"ModPlayerEntityMixin"
 	],
 	"injectors": {

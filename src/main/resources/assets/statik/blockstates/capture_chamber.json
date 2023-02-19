@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "statik:block/capture_chamber" },
+    "facing=east": { "model": "statik:block/capture_chamber", "y": 90 },
+    "facing=south": { "model": "statik:block/capture_chamber", "y": 180 },
+    "facing=west": { "model": "statik:block/capture_chamber", "y": 270 }
+  }
+}

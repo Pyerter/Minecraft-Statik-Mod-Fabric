@@ -5,8 +5,11 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pyerter.statik.block.ModBlocks;
+import pyerter.statik.block.entity.ModBlockEntities;
 import pyerter.statik.item.ModItemGroup;
 import pyerter.statik.item.ModItems;
+import pyerter.statik.screen.ModScreens;
+import pyerter.statik.screen.handlers.ModScreenHandlers;
 
 public class Statik implements ModInitializer {
 	public static final String MOD_ID = "statik";
@@ -32,6 +35,9 @@ public class Statik implements ModInitializer {
 
 		// Register blocks
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerAllBlockEntities();
+
+		ModScreenHandlers.registerAllScreenHandlers();
 	}
 
 	public static void logInfo(String message) {

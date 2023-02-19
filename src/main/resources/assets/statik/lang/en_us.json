@@ -5,5 +5,7 @@
 
   "block.statik.spiral_cube_block": "Spiral Cube",
   "block.statik.sephrine_ore": "Sephrine Ore",
-  "block.statik.deepslate_sephrine_ore": "Deepslate Sephrine Ore"
+  "block.statik.deepslate_sephrine_ore": "Deepslate Sephrine Ore",
+  "block.statik.capture_chamber": "Capture Chamber",
+  "block.statik.capture_chamber_provider": "Capture Chamber Provider"
 }

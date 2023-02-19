@@ -1,11 +1,15 @@
 package pyerter.statik;
 
 import net.fabricmc.api.ClientModInitializer;
+import pyerter.statik.block.ModBlocks;
+import pyerter.statik.block.entity.ModBlockEntities;
+import pyerter.statik.screen.ModScreens;
 
 public class StatikClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-
+        ModScreens.registerScreens();
+        ModBlocks.registerModBlockRenderLayers();
     }
 }
