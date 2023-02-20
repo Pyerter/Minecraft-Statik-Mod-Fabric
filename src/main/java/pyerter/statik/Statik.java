@@ -8,6 +8,7 @@ import pyerter.statik.block.ModBlocks;
 import pyerter.statik.block.entity.ModBlockEntities;
 import pyerter.statik.item.ModItemGroup;
 import pyerter.statik.item.ModItems;
+import pyerter.statik.particle.ModParticles;
 import pyerter.statik.screen.ModScreens;
 import pyerter.statik.screen.handlers.ModScreenHandlers;
 
@@ -36,6 +37,9 @@ public class Statik implements ModInitializer {
 		// Register blocks
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerAllBlockEntities();
+
+		// Register particles
+		ModParticles.registerParticles();
 
 		ModScreenHandlers.registerAllScreenHandlers();
 	}

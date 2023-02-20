@@ -12,7 +12,7 @@ public class ModItemGroup {
 
     public static void registerItemGroups() {
         STATIK = FabricItemGroup.builder(new Identifier(Statik.MOD_ID))
-                .displayName(Text.translatable("itemgroup.statik")) // or Text.literal("Sapphire Items")
+                .displayName(Text.translatable("itemgroup.statik")) // or Text.literal("sephrine Items")
                 .icon(() -> new ItemStack(ModItems.SEPHRINE_DUST)).build();
     }
 

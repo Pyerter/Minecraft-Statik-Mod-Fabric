@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "statik:item/celestial_focus_staff_sapphire"
+    "layer0": "statik:item/celestial_focus_staff_sephrine"
   }
 }

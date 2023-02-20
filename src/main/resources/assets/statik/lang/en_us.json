@@ -2,10 +2,127 @@
   "itemgroup.statik": "Statik Items",
 
   "item.statik.sephrine_dust": "Sephrine Dust",
+  "item.statik.starmetal_alloy_ingot": "Starmetal Alloy",
+  "item.statik.starmetal_compound_mix": "Starmetal Compound",
+  "item.statik.nether_star_dust": "Nether Star Dust",
+  "item.statik.sephrine_star": "Sephrine Star",
+  "item.statik.sephrine_star_base": "Sephrine Star Base",
+
+  "item.statik.starmetal_sword": "Starmetal Sword",
+  "item.statik.starmetal_shovel": "Starmetal Shovel",
+  "item.statik.starmetal_pickaxe": "Starmetal Pickaxe",
+  "item.statik.starmetal_axe": "Starmetal Axe",
+  "item.statik.starmetal_hoe": "Starmetal Hoe",
+
+  "item.statik.engineered_starmetal_sword": "Engineered Starmetal Sword",
+  "item.statik.engineered_starmetal_shovel": "Engineered Starmetal Shovel",
+  "item.statik.engineered_starmetal_pickaxe": "Engineered Starmetal Pickaxe",
+  "item.statik.engineered_starmetal_axe": "Engineered Starmetal Axe",
+  "item.statik.engineered_starmetal_hoe": "Engineered Starmetal Hoe",
+
+  "item.statik.engineered_stone_sword": "Engineered Stone Sword",
+  "item.statik.engineered_stone_shovel": "Engineered Stone Shovel",
+  "item.statik.engineered_stone_pickaxe": "Engineered Stone Pickaxe",
+  "item.statik.engineered_stone_axe": "Engineered Stone Axe",
+  "item.statik.engineered_stone_hoe": "Engineered Stone Hoe",
+
+  "item.statik.engineered_iron_sword": "Engineered Iron Sword",
+  "item.statik.engineered_iron_shovel": "Engineered Iron Shovel",
+  "item.statik.engineered_iron_pickaxe": "Engineered Iron Pickaxe",
+  "item.statik.engineered_iron_axe": "Engineered Iron Axe",
+  "item.statik.engineered_iron_hoe": "Engineered Iron Hoe",
+
+  "item.statik.engineered_golden_sword": "Engineered Golden Sword",
+  "item.statik.engineered_golden_shovel": "Engineered Golden Shovel",
+  "item.statik.engineered_golden_pickaxe": "Engineered Golden Pickaxe",
+  "item.statik.engineered_golden_axe": "Engineered Golden Axe",
+  "item.statik.engineered_golden_hoe": "Engineered Golden Hoe",
+
+  "item.statik.engineered_diamond_sword": "Engineered Diamond Sword",
+  "item.statik.engineered_diamond_shovel": "Engineered Diamond Shovel",
+  "item.statik.engineered_diamond_pickaxe": "Engineered Diamond Pickaxe",
+  "item.statik.engineered_diamond_axe": "Engineered Diamond Axe",
+  "item.statik.engineered_diamond_hoe": "Engineered Diamond Hoe",
+
+  "item.statik.engineered_netherite_sword": "Engineered Netherite Sword",
+  "item.statik.engineered_netherite_shovel": "Engineered Netherite Shovel",
+  "item.statik.engineered_netherite_pickaxe": "Engineered Netherite Pickaxe",
+  "item.statik.engineered_netherite_axe": "Engineered Netherite Axe",
+  "item.statik.engineered_netherite_hoe": "Engineered Netherite Hoe",
+
+  "item.statik.engineers_trusty_hammer": "Engineer's Trusty Hammer",
+
+  "item.statik.engineers_blueprint": "Engineer's Blueprint",
+  "item.statik.engineers_repair_kit": "Engineer's Repair Kit",
+  "item.statik.flask_blueprint": "Flask Blueprint",
+
+  "item.statik.copper_wire_item": "Copper Wire",
+  "item.statik.gold_threading_item": "Gold Threading",
+  "item.statik.screw_item": "Screws",
+  "item.statik.pounded_kelp_item": "Pounded Kelp",
+  "item.statik.sticky_sludge_item": "Sticky Sludge",
+  "item.statik.pyrifera_insulation_goo": "Pyrifera Insulation Goo",
+  "item.statik.wiring_kit": "Wiring Kit",
+  "item.statik.electronics_base": "Electronics Base",
+  "item.statik.tempered_iron_ingot": "Tempered Iron Ingot",
+  "item.statik.sephrine_wire_item": "Sephrine Wire",
+  "item.statik.sephrine_capacitor": "Sephrine Capacitor",
+  "item.statik.surge_capacitor": "Surge Capacitor",
+
+  "item.statik.makeshift_core": "Makeshift Core",
+  "item.statik.makeshift_catalyst": "Makeshift Catalyst",
+  "item.statik.catalyst_enhancer_engraving": "Catalyst Enhancer",
+  "item.statik.storm_core": "Storm Core",
+  "item.statik.storm_catalyst": "Storm Catalyst",
+  "item.statik.catalyst_enhancer_tempering": "Catalyst Enhancer",
+  "item.statik.catalyst_enhancer_sifting": "Catalyst Enhancer",
+  "item.statik.catalyst_enhancer_erosion": "Catalyst Enhancer",
+  "item.statik.catalyst_enhancer_infusion": "Catalyst Enhancer",
+
+  "item.statik.health_flask": "Health Flask",
+  "item.statik.pautsch_item": "Pautsch",
+
+  "item.statik.malice_scythe": "Malice",
+  "item.statik.jonathan_hammer": "Jonathan?",
 
   "block.statik.spiral_cube_block": "Spiral Cube",
   "block.statik.sephrine_ore": "Sephrine Ore",
   "block.statik.deepslate_sephrine_ore": "Deepslate Sephrine Ore",
+  
   "block.statik.capture_chamber": "Capture Chamber",
-  "block.statik.capture_chamber_provider": "Capture Chamber Provider"
+  "block.statik.capture_chamber_provider": "Capture Chamber Provider",
+  "block.statik.tridi": "Tridiminiumobulator",
+  "block.statik.engineering_station": "Engineering Station",
+  "block.statik.kitchen_stove_station": "Kitchen Stove",
+  "block.statik.food_prepping_station": "Food Prepping Station",
+
+  "block.statik.redstone_memorizer_block": "Redstone Memorizer",
+
+  "item.statik.rolling_pin_item": "Rolling Pin",
+  "item.statik.bread_knife_item": "Bread Knife",
+  "item.statik.cookie_cutter_item": "Cookie Cutter",
+  "item.statik.sliced_bread_item": "Sliced Bread",
+  "item.statik.dough_item": "Dough",
+  "item.statik.flattened_dough_item": "Flattened Dough",
+  "item.statik.cookie_dough_item": "Cookie Dough",
+  "item.statik.chocolate_chip_cookie_dough_item": "Chocolate Chip Cookie Dough",
+  "item.statik.garlic_crop_block": "Garlic Crop",
+  "item.statik.garlic_clove_item": "Garlic Clove",
+  "item.statik.garlic_item": "Garlic",
+
+  "item.statik.enduring_flesh": "Enduring Flesh",
+
+  "item.statik.glow_ring": "Glow Ring",
+  "item.statik.glow_rings": "Glow Rings",
+  "item.statik.glow_ring_binding": "Glow Ring Binding",
+  "item.statik.polished_leather": "Polished Leather",
+  "item.statik.treated_leather": "Treated Leather",
+  "item.statik.etched_cover": "Etched Cover",
+  "item.statik.gilded_tablet_page": "Gilded Tablet Page",
+  "item.statik.gilded_tablet_pages": "Gilded Tablet Pages",
+
+  "item.statik.augmented_tablet": "Augmented Tablet",
+  "augment.statik.honed_edge": "Augment - Honed Edge",
+  "augment.statik.expert_mining": "Augment - Expert Mining",
+  "augment.statik.ore_smashing": "Augment - Ore Smashing"
 }

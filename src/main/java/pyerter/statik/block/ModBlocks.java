@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.Material;
 import net.minecraft.client.render.RenderLayer;
@@ -13,11 +14,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.stat.Stat;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import pyerter.statik.Statik;
 import pyerter.statik.block.custom.CaptureChamberBlock;
 import pyerter.statik.block.custom.CaptureChamberProviderBlock;
+import pyerter.statik.block.custom.GarlicCropBlock;
 import pyerter.statik.item.ModItemGroup;
 
 public class ModBlocks {
@@ -33,11 +36,18 @@ public class ModBlocks {
                     UniformIntProvider.create(2, 7)),
             ModItemGroup.STATIK);
 
+    public static final Block GARLIC_CROP_BLOCK = registerOnlyBlock("garlic_crop_block",
+            new GarlicCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+
     public static final Block CAPTURE_CHAMBER = registerBlock("capture_chamber",
             new CaptureChamberBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().strength(2f).requiresTool()), ModItemGroup.STATIK);
 
     public static final Block CAPTURE_CHAMBER_PROVIDER = registerBlock("capture_chamber_provider",
             new CaptureChamberProviderBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).nonOpaque().strength(2f).requiresTool()), ModItemGroup.STATIK);
+
+    private static Block registerOnlyBlock(String name, Block block, ItemGroup ... groups) {
+        return Registry.register(Registries.BLOCK, new Identifier(Statik.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block, ItemGroup ... groups) {
         registerBlockItem(name, block, groups);

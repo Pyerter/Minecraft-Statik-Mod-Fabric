@@ -9,6 +9,8 @@ import pyerter.statik.Statik;
 public class ModScreenHandlers {
     public static ScreenHandlerType<CaptureChamberScreenHandler> CAPTURE_CHAMBER_SCREEN_HANDLER;
 
+    public static ScreenHandlerType<PautschItemScreenHandler> PAUTSCH_ITEM_SCREEN_HANDLER;
+
     public static ScreenHandlerType<PlayerScreenHandler> PLAYER_SCREEN_HANDLER;
 
     public static void registerAllScreenHandlers() {

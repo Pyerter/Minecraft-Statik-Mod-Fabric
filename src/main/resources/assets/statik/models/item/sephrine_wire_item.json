@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "statik:item/sapphire_capacitor"
+    "layer0": "statik:item/sephrine_wire_item"
   }
 }
