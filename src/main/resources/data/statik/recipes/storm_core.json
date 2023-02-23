@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "statik:surge_capacitor"
+    },
+    "W": {
+      "item": "statik:sephrine_wire_item"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "P": {
+      "item": "statik:pyrifera_insulation_goo"
+    },
+    "I": {
+      "item": "statik:tempered_iron_ingot"
+    },
+    "L": {
+      "item": "statik:gold_threading_item"
+    }
+  },
+  "pattern": [
+    "LWL",
+    "GSG",
+    "IPI"
+  ],
+  "result": {
+    "item": "statik:storm_core"
+  }
+}

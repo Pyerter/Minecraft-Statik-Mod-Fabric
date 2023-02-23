@@ -1,0 +1,19 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:makeshift_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_erosion"
+    },
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "output": {
+    "item": "minecraft:dirt"
+  },
+  "cookTime": 20,
+  "energyCost": 4
+}

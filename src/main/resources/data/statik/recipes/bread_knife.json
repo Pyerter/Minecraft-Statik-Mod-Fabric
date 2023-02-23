@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "statik:pyrifera_insulation_goo"
+    }
+  },
+  "pattern": [
+    "  I",
+    "PI ",
+    "S  "
+  ],
+  "result": {
+    "item": "statik:bread_knife_item"
+  }
+}

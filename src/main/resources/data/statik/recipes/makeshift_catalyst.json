@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "M": {
+      "item": "statik:makeshift_core"
+    },
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "P": {
+      "item": "statik:pyrifera_insulation_goo"
+    },
+    "C": {
+      "item": "statik:copper_wire_item"
+    }
+  },
+  "pattern": [
+    "CGC",
+    "PMP",
+    "CGC"
+  ],
+  "result": {
+    "item": "statik:makeshift_catalyst"
+  }
+}

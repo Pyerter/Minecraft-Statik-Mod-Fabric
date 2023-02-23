@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "statik:sephrine_ore",
+    "statik:deepslate_sephrine_ore",
+    "statik:spiral_cube_block",
+    "statik:capture_chamber",
+    "statik:capture_chamber_provider",
+    "statik:kitchen_stove_station",
+    "statik:tridi",
+    "statik:crystallized_energy_block"
+  ]
+}

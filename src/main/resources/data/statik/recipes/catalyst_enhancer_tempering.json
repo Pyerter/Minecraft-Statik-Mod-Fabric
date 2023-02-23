@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "M": {
+      "item": "minecraft:magma_block"
+    },
+    "P": {
+      "item": "statik:pyrifera_insulation_goo"
+    },
+    "C": {
+      "item": "statik:copper_wire_item"
+    }
+  },
+  "pattern": [
+    " PP",
+    "MCP",
+    "MM "
+  ],
+  "result": {
+    "item": "statik:catalyst_enhancer_tempering"
+  }
+}

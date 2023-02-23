@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:cookie"
+    }
+  },
+  "pattern": [
+    " I ",
+    " CI",
+    "S  "
+  ],
+  "result": {
+    "item": "statik:cookie_cutter_item"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "statik:food_prepping_station",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "output": {
+    "item": "statik:dough_item",
+    "count": 3
+  }
+}

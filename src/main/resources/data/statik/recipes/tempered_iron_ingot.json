@@ -1,0 +1,23 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:makeshift_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_tempering"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "output": {
+    "item": "statik:tempered_iron_ingot",
+    "count": 3
+  },
+  "cookTime": 100,
+  "energyCost": 10
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "statik:screw_item"
+    },
+    "C": {
+      "item": "statik:copper_wire_item"
+    },
+    "A": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "pattern": [
+    "SCS",
+    "ACA",
+    "SCS"
+  ],
+  "result": {
+    "item": "statik:capture_chamber_provider"
+  }
+}

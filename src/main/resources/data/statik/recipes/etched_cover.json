@@ -1,0 +1,25 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:makeshift_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_engraving"
+    },
+    {
+      "item": "statik:treated_leather"
+    },
+    {
+      "item": "statik:treated_leather"
+    },
+    {
+      "item": "statik:treated_leather"
+    }
+  ],
+  "output": {
+    "item": "statik:etched_cover"
+  },
+  "cookTime": 100,
+  "energyCost": 10
+}

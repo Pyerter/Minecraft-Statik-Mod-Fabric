@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "statik:screw_item"
+    },
+    "C": {
+      "item": "statik:copper_wire_item"
+    },
+    "A": {
+      "item": "minecraft:andesite"
+    },
+    "M": {
+      "item": "statik:makeshift_core"
+    }
+  },
+  "pattern": [
+    "SIS",
+    "CMC",
+    "AIA"
+  ],
+  "result": {
+    "item": "statik:tridi"
+  }
+}

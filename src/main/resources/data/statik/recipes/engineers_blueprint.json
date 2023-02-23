@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "E": {
+      "item": "statik:empty_blueprint"
+    },
+    "A": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "pattern": [
+    "AIA",
+    "IEI",
+    "AIA"
+  ],
+  "result": {
+    "item": "statik:engineers_blueprint"
+  }
+}

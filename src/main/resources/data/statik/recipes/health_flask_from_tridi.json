@@ -1,0 +1,26 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:health_flask"
+    },
+    {
+      "item": "statik:garlic_item"
+    },
+    {
+      "item": "statik:enduring_flesh"
+    }
+  ],
+  "output": {
+    "item": "statik:health_flask",
+    "count": 1
+  },
+  "cookTime": 100,
+  "energyCost": 50,
+  "nbt_output_values": [
+    {
+      "nbt_id": "statik.charges",
+      "nbt_value": 3
+    }
+  ]
+}

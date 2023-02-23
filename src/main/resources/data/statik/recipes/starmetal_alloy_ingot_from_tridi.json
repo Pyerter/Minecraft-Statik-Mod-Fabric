@@ -1,0 +1,25 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:storm_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_tempering"
+    },
+    {
+      "item": "statik:starmetal_compound_mix"
+    },
+    {
+      "item": "statik:tempered_iron_ingot"
+    },
+    {
+      "item": "statik:tempered_iron_ingot"
+    }
+  ],
+  "output": {
+    "item": "statik:starmetal_alloy_ingot"
+  },
+  "cookTime": 100,
+  "energyCost": 50
+}

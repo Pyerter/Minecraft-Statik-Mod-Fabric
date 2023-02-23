@@ -1,0 +1,26 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:makeshift_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_tempering"
+    },
+    {
+      "item": "statik:copper_wire_item"
+    },
+    {
+      "item": "statik:copper_wire_item"
+    },
+    {
+      "item": "statik:sephrine_dust"
+    }
+  ],
+  "output": {
+    "item": "statik:sephrine_wire_item",
+    "count": 4
+  },
+  "cookTime": 72,
+  "energyCost": 10
+}

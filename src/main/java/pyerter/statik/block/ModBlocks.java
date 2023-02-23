@@ -14,12 +14,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.stat.Stat;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import pyerter.statik.Statik;
 import pyerter.statik.block.custom.*;
 import pyerter.statik.item.ModItemGroup;
+import pyerter.statik.tag.ModBlockTagProvider;
+import pyerter.statik.tag.ModBlockTags;
 
 public class ModBlocks {
     public static final Block SPIRAL_CUBE_BLOCK = registerBlock("spiral_cube_block",
@@ -33,6 +36,10 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
                     UniformIntProvider.create(2, 7)),
             ModItemGroup.STATIK);
+
+    public static final Block CRYSTALLIZED_ENERGY_BLOCK = registerBlockWithTag("crystallized_energy_block",
+            new CrystallizedEnergyBlock(FabricBlockSettings.of(ModMaterials.CRYSTALLIZED_MANA).strength(10f).requiresTool().nonOpaque()),
+            ModBlockTags.NEEDS_NETHERITE_TOOL, ModItemGroup.STATIK);
 
     public static final Block GARLIC_CROP_BLOCK = registerOnlyBlock("garlic_crop_block",
             new GarlicCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
@@ -62,8 +69,22 @@ public class ModBlocks {
     public static final Block TRIDI = registerBlock("tridi",
             new TridiBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().strength(3f).requiresTool()), ModItemGroup.STATIK);
 
+    public static final Block REDSTONE_MEMORIZER_BLOCK = registerBlock("redstone_memorizer_block",
+            new RedstoneMemorizerBlock(FabricBlockSettings
+                    .of(Material.REDSTONE_LAMP)
+                    .luminance(RedstoneMemorizerBlock::calculateLuminance)
+                    .solidBlock((a, b, c) -> false)
+                    .strength(1f)),
+            ModItemGroup.STATIK);
+
     private static Block registerOnlyBlock(String name, Block block, ItemGroup ... groups) {
         return Registry.register(Registries.BLOCK, new Identifier(Statik.MOD_ID, name), block);
+    }
+
+    private static Block registerBlockWithTag(String name, Block block, TagKey<Block> tagKey, ItemGroup ... groups) {
+        Block registeredBlock = registerBlock(name, block, groups);
+        ModBlockTagProvider.tryRegisterBlockToTag(tagKey, registeredBlock);
+        return registeredBlock;
     }
 
     private static Block registerBlock(String name, Block block, ItemGroup ... groups) {

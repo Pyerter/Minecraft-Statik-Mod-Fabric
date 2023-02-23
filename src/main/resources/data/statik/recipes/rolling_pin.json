@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " PS",
+    "PSP",
+    "SP "
+  ],
+  "result": {
+    "item": "statik:rolling_pin_item"
+  }
+}

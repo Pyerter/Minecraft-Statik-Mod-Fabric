@@ -1,0 +1,13 @@
+{
+  "type": "statik:engineering_station_refine",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "output": {
+    "item": "statik:copper_wire_item",
+    "count": 2
+  },
+  "hammer_cost": 1
+}

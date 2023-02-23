@@ -1,0 +1,15 @@
+{
+  "type": "statik:food_prepping_station",
+  "ingredients": [
+    {
+      "item": "statik:cookie_dough_item"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "output": {
+    "item": "statik:chocolate_chip_cookie_dough_item",
+    "count": 1
+  }
+}

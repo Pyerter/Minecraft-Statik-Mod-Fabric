@@ -25,7 +25,7 @@ import pyerter.statik.util.InventoryUtil;
 import java.util.List;
 
 public class PautschItem extends Item implements INbtInventory, NamedScreenHandlerFactory { // implements AccessoryItem
-    public static final String ITEM_INVENTORY_NBT_ID = "pootsadditions.pautsch_inventory";
+    public static final String ITEM_INVENTORY_NBT_ID = "statik.pautsch_inventory";
     public static final Integer PAUTSCH_INVENTORY_SIZE = 27;
 
     public PautschItem(Settings settings) {

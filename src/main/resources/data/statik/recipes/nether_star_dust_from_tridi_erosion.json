@@ -1,0 +1,20 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:storm_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_erosion"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "output": {
+    "item": "statik:nether_star_dust",
+    "count": 4
+  },
+  "cookTime": 800,
+  "energyCost": 200
+}

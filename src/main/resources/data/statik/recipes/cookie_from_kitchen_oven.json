@@ -1,0 +1,15 @@
+{
+  "type": "statik:kitchen_stove_station",
+  "ingredients": [
+    {
+      "item": "statik:chocolate_chip_cookie_dough_item"
+    }
+  ],
+  "output": {
+    "item": "minecraft:cookie",
+    "count": 4
+  },
+  "cookTime": 200,
+  "energyCost": 10,
+  "cookLevel": 0
+}

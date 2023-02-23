@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "E": {
+      "item": "statik:empty_blueprint"
+    },
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "P": {
+      "item": "minecraft:poppy"
+    }
+  },
+  "pattern": [
+    "GBG",
+    "GEG",
+    "GPG"
+  ],
+  "result": {
+    "item": "statik:flask_blueprint"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "statik:pyrifera_insulation_goo"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "IPI",
+    "IFI"
+  ],
+  "result": {
+    "item": "statik:kitchen_stove_station"
+  }
+}

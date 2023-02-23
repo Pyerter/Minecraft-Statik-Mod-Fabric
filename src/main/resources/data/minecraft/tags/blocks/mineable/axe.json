@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "statik:food_prepping_station",
+    "statik:engineering_station"
+  ]
+}

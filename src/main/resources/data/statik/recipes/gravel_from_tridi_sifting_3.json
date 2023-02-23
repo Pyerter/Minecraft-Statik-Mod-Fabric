@@ -1,0 +1,26 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:makeshift_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_sifting"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "output": {
+    "item": "minecraft:gravel",
+    "count": 3
+  },
+  "cookTime": 20,
+  "energyCost": 10
+}

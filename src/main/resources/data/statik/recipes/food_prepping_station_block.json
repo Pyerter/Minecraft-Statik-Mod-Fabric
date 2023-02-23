@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "item": "minecraft:cobblestone"
+    },
+    "C": {
+      "item": "minecraft:crafting_table"
+    },
+    "H": {
+      "item": "minecraft:chest"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "PCP",
+    "THT"
+  ],
+  "result": {
+    "item": "statik:food_prepping_station"
+  }
+}

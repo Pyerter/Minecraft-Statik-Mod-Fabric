@@ -1,0 +1,25 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:makeshift_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_engraving"
+    },
+    {
+      "item": "statik:sephrine_dust"
+    },
+    {
+      "item": "statik:electronics_base"
+    },
+    {
+      "item": "statik:tempered_iron_ingot"
+    }
+  ],
+  "output": {
+    "item": "statik:sephrine_capacitor"
+  },
+  "cookTime": 72,
+  "energyCost": 10
+}

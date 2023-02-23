@@ -1,0 +1,13 @@
+{
+  "type": "statik:engineering_station_refine",
+  "ingredients": [
+    {
+      "item": "minecraft:kelp"
+    }
+  ],
+  "output": {
+    "item": "statik:pounded_kelp_item",
+    "count": 2
+  },
+  "hammer_cost": 1
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "statik:sticky_sludge_item"
+    },
+    {
+      "item": "statik:sticky_sludge_item"
+    },
+    {
+      "item": "statik:sticky_sludge_item"
+    },
+    {
+      "item": "statik:sticky_sludge_item"
+    }
+  ],
+  "result": {
+    "item": "statik:pyrifera_insulation_goo"
+  }
+}

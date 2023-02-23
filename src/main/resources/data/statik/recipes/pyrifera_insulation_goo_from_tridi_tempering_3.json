@@ -1,0 +1,26 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:makeshift_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_tempering"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    }
+  ],
+  "output": {
+    "item": "statik:pyrifera_insulation_goo",
+    "count": 6
+  },
+  "cookTime": 72,
+  "energyCost": 10
+}

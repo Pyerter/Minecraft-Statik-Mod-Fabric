@@ -1,0 +1,13 @@
+{
+  "type": "statik:engineering_station_refine",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "output": {
+    "item": "statik:gold_threading_item",
+    "count": 2
+  },
+  "hammer_cost": 1
+}

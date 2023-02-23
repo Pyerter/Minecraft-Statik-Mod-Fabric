@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "statik:sephrine_capacitor"
+    },
+    "W": {
+      "item": "statik:wiring_kit"
+    }
+  },
+  "pattern": [
+    "S",
+    "W"
+  ],
+  "result": {
+    "item": "statik:surge_capacitor"
+  }
+}

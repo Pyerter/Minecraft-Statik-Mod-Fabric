@@ -21,7 +21,7 @@ import java.util.function.BiFunction;
 
 public class HealthFlaskItem extends Item {
     public static final int MAX_CHARGES = 3;
-    public static final String CHARGE_NBT_ID = "pootsadditions.charges";
+    public static final String CHARGE_NBT_ID = "statik.charges";
     public static final float HEAL_AMOUNT = 20;
 
     public HealthFlaskItem(Settings settings) {

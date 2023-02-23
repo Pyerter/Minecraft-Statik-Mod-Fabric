@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "engineering",
+  "ingredient": {
+    "item": "statik:pounded_kelp_item"
+  },
+  "result": "statik:pyrifera_insulation_goo"
+}

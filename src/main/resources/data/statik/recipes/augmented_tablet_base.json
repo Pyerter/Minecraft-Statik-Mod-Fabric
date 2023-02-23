@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "statik:etched_cover"
+    },
+    "G": {
+      "item": "statik:glow_ring_binding"
+    },
+    "P": {
+      "item": "statik:gilded_tablet_pages"
+    }
+  },
+  "pattern": [
+    " E",
+    "GP",
+    " E"
+  ],
+  "result": {
+    "item": "statik:augmented_tablet"
+  }
+}

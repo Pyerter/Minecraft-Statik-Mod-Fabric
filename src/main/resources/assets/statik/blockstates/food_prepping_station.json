@@ -1,8 +1,8 @@
 {
   "variants": {
-    "facing=north": { "model": "pootsadditions:block/food_prepping_station" },
-    "facing=east": { "model": "pootsadditions:block/food_prepping_station", "y": 90 },
-    "facing=south": { "model": "pootsadditions:block/food_prepping_station", "y": 180 },
-    "facing=west": { "model": "pootsadditions:block/food_prepping_station", "y": 270 }
+    "facing=north": { "model": "statik:block/food_prepping_station" },
+    "facing=east": { "model": "statik:block/food_prepping_station", "y": 90 },
+    "facing=south": { "model": "statik:block/food_prepping_station", "y": 180 },
+    "facing=west": { "model": "statik:block/food_prepping_station", "y": 270 }
   }
 }

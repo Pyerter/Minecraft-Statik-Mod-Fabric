@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "statik:screw_item"
+    }
+  },
+  "pattern": [
+    "STS",
+    "TLT",
+    "STS"
+  ],
+  "result": {
+    "item": "statik:engineers_repair_kit",
+    "count": 2
+  }
+}

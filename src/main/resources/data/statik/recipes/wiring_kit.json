@@ -1,0 +1,25 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:makeshift_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_engraving"
+    },
+    {
+      "item": "statik:electronics_base"
+    },
+    {
+      "item": "statik:copper_wire_item"
+    },
+    {
+      "item": "statik:copper_wire_item"
+    }
+  ],
+  "output": {
+    "item": "statik:wiring_kit"
+  },
+  "cookTime": 100,
+  "energyCost": 10
+}

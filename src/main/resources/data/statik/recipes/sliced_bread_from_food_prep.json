@@ -1,0 +1,15 @@
+{
+  "type": "statik:food_prepping_station",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    }
+  ],
+  "output": {
+    "item": "statik:sliced_bread_item",
+    "count": 4
+  },
+  "tool_ingredient" : {
+    "item": "statik:bread_knife_item"
+  }
+}

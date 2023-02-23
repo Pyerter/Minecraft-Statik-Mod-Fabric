@@ -1,0 +1,26 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:storm_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_tempering"
+    },
+    {
+      "item": "statik:sephrine_dust"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "output": {
+    "item": "statik:starmetal_compound_mix",
+    "count": 2
+  },
+  "cookTime": 100,
+  "energyCost": 50
+}

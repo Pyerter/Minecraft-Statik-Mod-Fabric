@@ -1,0 +1,13 @@
+{
+  "type": "statik:engineering_station_refine",
+  "ingredients": [
+    {
+      "item": "statik:pyrifera_insulation_goo"
+    }
+  ],
+  "output": {
+    "item": "statik:sticky_sludge_item",
+    "count": 2
+  },
+  "hammer_cost": 1
+}

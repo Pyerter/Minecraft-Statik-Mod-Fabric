@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:stone_slab"
+    },
+    "G": {
+      "item": "statik:gold_threading_item"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    " G ",
+    "GPG",
+    " S "
+  ],
+  "result": {
+    "item": "statik:gilded_tablet_page"
+  }
+}

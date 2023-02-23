@@ -38,7 +38,7 @@ public class JonathanHammer extends AbstractEngineeredTool implements IChargeabl
 
     @Override
     public String getChargeNbtID() {
-        return "pootsadditions.charge";
+        return "statik.charge";
     }
 
     @Override

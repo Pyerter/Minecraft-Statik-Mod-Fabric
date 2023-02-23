@@ -1,0 +1,23 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:storm_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_infusion"
+    },
+    {
+      "item": "statik:sephrine_star"
+    },
+    {
+      "item": "minecraft:dragon_egg"
+    }
+  ],
+  "output": {
+    "item": "minecraft:dragon_egg",
+    "count": 2
+  },
+  "cookTime": 400,
+  "energyCost": 200
+}

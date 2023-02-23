@@ -1,0 +1,16 @@
+{
+  "type": "statik:engineering_station_refine",
+  "ingredients": [
+    {
+      "item": "statik:pyrifera_insulation_goo"
+    }
+  ],
+  "output": {
+    "item": "statik:health_flask",
+    "count": 1
+  },
+  "hammer_cost": 1,
+  "engineer_ingredient": {
+    "item": "statik:flask_blueprint"
+  }
+}

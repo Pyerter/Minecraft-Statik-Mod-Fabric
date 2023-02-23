@@ -1,0 +1,15 @@
+{
+  "type": "statik:kitchen_stove_station",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "output": {
+    "item": "minecraft:cake",
+    "count": 1
+  },
+  "cookTime": 400,
+  "energyCost": 40,
+  "cookLevel": 1
+}

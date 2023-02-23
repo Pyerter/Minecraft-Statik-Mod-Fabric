@@ -1,0 +1,25 @@
+{
+  "type": "statik:tridi",
+  "ingredients": [
+    {
+      "item": "statik:storm_catalyst"
+    },
+    {
+      "item": "statik:catalyst_enhancer_infusion"
+    },
+    {
+      "item": "statik:nether_star_dust"
+    },
+    {
+      "item": "statik:starmetal_compound_mix"
+    },
+    {
+      "item": "statik:starmetal_compound_mix"
+    }
+  ],
+  "output": {
+    "item": "statik:sephrine_star"
+  },
+  "cookTime": 400,
+  "energyCost": 200
+}

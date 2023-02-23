@@ -29,7 +29,7 @@ public class MaliceScythe extends AbstractEngineeredTool implements IChargeable 
 
     @Override
     public String getChargeNbtID() {
-        return "pootsadditions.charge";
+        return "statik.charge";
     }
 
     @Override

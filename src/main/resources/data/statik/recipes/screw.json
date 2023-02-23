@@ -1,0 +1,13 @@
+{
+  "type": "statik:engineering_station_refine",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "output": {
+    "item": "statik:screw_item",
+    "count": 2
+  },
+  "hammer_cost": 1
+}

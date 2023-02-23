@@ -1,0 +1,15 @@
+{
+  "type": "statik:kitchen_stove_station",
+  "ingredients": [
+    {
+      "item": "statik:dough_item"
+    }
+  ],
+  "output": {
+    "item": "minecraft:bread",
+    "count": 2
+  },
+  "cookTime": 200,
+  "energyCost": 10,
+  "cookLevel": 0
+}

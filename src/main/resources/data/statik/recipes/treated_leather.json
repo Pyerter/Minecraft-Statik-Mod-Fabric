@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 5.0,
+  "ingredient": {
+    "item": "statik:polished_leather"
+  },
+  "result": "statik:treated_leather"
+}

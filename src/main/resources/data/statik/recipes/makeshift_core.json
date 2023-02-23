@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "statik:screw_item"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "P": {
+      "item": "statik:pyrifera_insulation_goo"
+    },
+    "C": {
+      "item": "statik:copper_wire_item"
+    }
+  },
+  "pattern": [
+    "SCS",
+    "GCG",
+    "IPI"
+  ],
+  "result": {
+    "item": "statik:makeshift_core"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "textures": [
-    "statik:particle/electro_static_particle",
-    "statik:particle/electro_static_particle2",
-    "statik:particle/electro_static_particle3"
+    "statik:electro_static_particle",
+    "statik:electro_static_particle2",
+    "statik:electro_static_particle3"
   ]
 }

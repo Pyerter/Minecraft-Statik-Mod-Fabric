@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "statik:screw_item"
+    },
+    "P": {
+      "item": "statik:pyrifera_insulation_goo"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "S S",
+    "PIP"
+  ],
+  "result": {
+    "item": "statik:electronics_base"
+  }
+}

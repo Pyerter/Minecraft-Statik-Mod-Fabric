@@ -1,0 +1,15 @@
+{
+  "type": "statik:food_prepping_station",
+  "ingredients": [
+    {
+      "item": "statik:dough_item"
+    }
+  ],
+  "output": {
+    "item": "statik:flattened_dough_item",
+    "count": 1
+  },
+  "tool_ingredient": {
+    "item": "statik:rolling_pin_item"
+  }
+}
