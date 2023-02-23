@@ -1,8 +1,6 @@
 package pyerter.statik.item.custom;
 
 import net.minecraft.advancement.criterion.Criteria;
-import net.minecraft.client.item.ClampedModelPredicateProvider;
-import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -14,12 +12,14 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
-import org.jetbrains.annotations.Nullable;
+import pyerter.statik.util.IItemWithVariantItemGroupStacks;
 import pyerter.statik.util.Util;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.BiFunction;
 
-public class HealthFlaskItem extends Item {
+public class HealthFlaskItem extends Item implements IItemWithVariantItemGroupStacks {
     public static final int MAX_CHARGES = 3;
     public static final String CHARGE_NBT_ID = "statik.charges";
     public static final float HEAL_AMOUNT = 20;
@@ -93,23 +93,21 @@ public class HealthFlaskItem extends Item {
         }
     }
 
-    /*
     @Override
-    public void appendStacks(ItemGroup group, DefaultedList<ItemStack> stacks) {
-        if (this.isIn(group)) {
-            stacks.add(new ItemStack(this));
-            ItemStack charge1 = new ItemStack(this);
-            setCharge(charge1, 1);
-            stacks.add(charge1);
-            ItemStack charge2 = new ItemStack(this);
-            setCharge(charge2, 2);
-            stacks.add(charge2);
-            ItemStack charge3 = new ItemStack(this);
-            setCharge(charge3, 3);
-            stacks.add(charge3);
-        }
+    public List<ItemStack> getVariantStacks() {
+        ArrayList<ItemStack> stacks = new ArrayList<>(4);
+        stacks.add(new ItemStack(this));
+        ItemStack charge1 = new ItemStack(this);
+        setCharge(charge1, 1);
+        stacks.add(charge1);
+        ItemStack charge2 = new ItemStack(this);
+        setCharge(charge2, 2);
+        stacks.add(charge2);
+        ItemStack charge3 = new ItemStack(this);
+        setCharge(charge3, 3);
+        stacks.add(charge3);
+        return stacks;
     }
-     */
 
     public float getOverridePredicateChargeValue(ItemStack stack) {
         switch (getCharge(stack)) {
@@ -117,32 +115,6 @@ public class HealthFlaskItem extends Item {
             case 2: return 0.501f;
             case 1: return 0.251f;
             default: case 0: return 0;
-        }
-    }
-
-    public static class FlaskChargePredicateProvider implements ClampedModelPredicateProvider {
-
-        public BiFunction<ItemStack, HealthFlaskItem, Float> flaskChargeFunction;
-        public FlaskChargePredicateProvider(BiFunction<ItemStack, HealthFlaskItem, Float> flaskChargeFunction) {
-            this.flaskChargeFunction = flaskChargeFunction;
-        }
-
-        @Override
-        public float call(ItemStack stack, @Nullable ClientWorld world, @Nullable LivingEntity entity, int seed) {
-            if (stack.getItem() instanceof HealthFlaskItem) {
-                HealthFlaskItem healthFlaskItem = (HealthFlaskItem) stack.getItem();
-                return flaskChargeFunction.apply(stack, healthFlaskItem);
-            }
-            return 0;
-        }
-
-        @Override
-        public float unclampedCall(ItemStack stack, @Nullable ClientWorld world, @Nullable LivingEntity entity, int seed) {
-            if (stack.getItem() instanceof HealthFlaskItem) {
-                HealthFlaskItem healthFlaskItem = (HealthFlaskItem) stack.getItem();
-                return flaskChargeFunction.apply(stack, healthFlaskItem);
-            }
-            return 0;
         }
     }
 }

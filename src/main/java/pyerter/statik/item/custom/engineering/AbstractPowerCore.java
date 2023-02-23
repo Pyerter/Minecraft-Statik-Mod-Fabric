@@ -1,12 +1,8 @@
 package pyerter.statik.item.custom.engineering;
 
-import net.minecraft.client.item.ClampedModelPredicateProvider;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.item.TooltipData;
-//import net.minecraft.client.item.UnclampedModelPredicateProvider;
-import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -20,6 +16,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import pyerter.statik.block.entity.CaptureChamberEntity;
+import pyerter.statik.util.IItemWithVariantItemGroupStacks;
 import pyerter.statik.util.Util;
 
 import java.util.ArrayList;
@@ -27,7 +24,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.BiFunction;
 
-public abstract class AbstractPowerCore extends Item implements IChargeable { // implements AccessoryItem
+public abstract class AbstractPowerCore extends Item implements IChargeable, IItemWithVariantItemGroupStacks { // implements AccessoryItem
 
     public static final List<Item> REGISTERED_CORES = new ArrayList<>();
     public static boolean isCoreFuelItem(ItemStack stack) {
@@ -107,6 +104,16 @@ public abstract class AbstractPowerCore extends Item implements IChargeable { //
     }
 
     @Override
+    public List<ItemStack> getVariantStacks() {
+        List<ItemStack> stacks = new ArrayList<>(1);
+        stacks.add(new ItemStack(this));
+        ItemStack chargedStack = new ItemStack(this);
+        tryCharge(chargedStack, getMaxCharge());
+        stacks.add(chargedStack);
+        return stacks;
+    }
+
+    @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(MutableText.of(new LiteralTextContent("Core Charge: " + getCharge(stack))).formatted(Formatting.AQUA));
         tooltip.add(MutableText.of(new LiteralTextContent("\"1.21 Gigawatts!\"")).formatted(Formatting.ITALIC));
@@ -128,31 +135,5 @@ public abstract class AbstractPowerCore extends Item implements IChargeable { //
     public int getItemBarColor(ItemStack stack) {
         float f = Math.max(0.0F, (float)getCharge(stack) / (float)getMaxCharge());
         return MathHelper.hsvToRgb(f / 3.0F, 1.0F, 1.0F);
-    }
-
-    public static class ChargePredicateProvider implements ClampedModelPredicateProvider {
-
-        public BiFunction<ItemStack, IChargeable, Float> coreChargeFunction;
-        public ChargePredicateProvider(BiFunction<ItemStack, IChargeable, Float> coreChargeFunction) {
-            this.coreChargeFunction = coreChargeFunction;
-        }
-
-        @Override
-        public float call(ItemStack stack, @Nullable ClientWorld world, @Nullable LivingEntity entity, int seed) {
-            if (stack.getItem() instanceof IChargeable) {
-                IChargeable chargeable = (IChargeable) stack.getItem();
-                return coreChargeFunction.apply(stack, chargeable);
-            }
-            return 0;
-        }
-
-        @Override
-        public float unclampedCall(ItemStack stack, @Nullable ClientWorld world, @Nullable LivingEntity entity, int seed) {
-            if (stack.getItem() instanceof IChargeable) {
-                IChargeable chargeable = (IChargeable) stack.getItem();
-                return coreChargeFunction.apply(stack, chargeable);
-            }
-            return 0;
-        }
     }
 }

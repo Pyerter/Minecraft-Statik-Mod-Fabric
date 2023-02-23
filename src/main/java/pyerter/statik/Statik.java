@@ -13,6 +13,7 @@ import pyerter.statik.particle.ModParticles;
 import pyerter.statik.recipe.ModRecipes;
 import pyerter.statik.screen.ModScreens;
 import pyerter.statik.screen.handlers.ModScreenHandlers;
+import pyerter.statik.world.gen.ModWorldGen;
 
 public class Statik implements ModInitializer {
 	public static final String MOD_ID = "statik";
@@ -49,6 +50,9 @@ public class Statik implements ModInitializer {
 
 		// Register custom screen handlers
 		ModScreenHandlers.registerAllScreenHandlers();
+
+		// Initialize world gen
+		ModWorldGen.initializeWorldGen();
 	}
 
 	public static void logInfo(String message) {

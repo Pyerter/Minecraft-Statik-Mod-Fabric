@@ -1,5 +1,11 @@
 package pyerter.statik.item.custom.engineering;
 
+import net.minecraft.item.ItemStack;
+import pyerter.statik.util.IItemWithVariantItemGroupStacks;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MakeshiftCore extends AbstractPowerCore {
     public static final int MAX_CHARGE = 1210;
 

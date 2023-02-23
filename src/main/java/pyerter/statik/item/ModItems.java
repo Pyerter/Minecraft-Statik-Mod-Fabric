@@ -15,6 +15,10 @@ import pyerter.statik.block.ModBlocks;
 import pyerter.statik.item.custom.*;
 import pyerter.statik.item.custom.engineering.*;
 import pyerter.statik.item.custom.engineering.augment.AugmentedTabletItem;
+import pyerter.statik.item.custom.engineering.augment.Augments;
+import pyerter.statik.util.IItemWithVariantItemGroupStacks;
+
+import java.util.List;
 
 public class ModItems {
 
@@ -301,11 +305,31 @@ public class ModItems {
     }
 
     private static void addItemToGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+        if (item instanceof IItemWithVariantItemGroupStacks) {
+            List<ItemStack> stacks = ((IItemWithVariantItemGroupStacks)item).getVariantStacks();
+            addItemStacksToGroup(group, stacks);
+        } else {
+            ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+        }
+    }
+
+    private static void addItemStackToGroup(ItemGroup group, ItemStack stack) {
+        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(stack));
+    }
+
+    private static void addItemStacksToGroup(ItemGroup group, List<ItemStack> stacks) {
+        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> {
+            for (ItemStack stack: stacks) {
+                if (!stack.isEmpty())
+                    entries.add(stack);
+                else
+                    Statik.LOGGER.warn("Appending stacks to group " + group.getDisplayName() + ", stack is empty: " + stack.toString());
+            }
+        });
     }
 
     public static void registerModItems() {
         Statik.LOGGER.info("Registering mod items.");
+        Augments.registerAugments();
     }
-
 }

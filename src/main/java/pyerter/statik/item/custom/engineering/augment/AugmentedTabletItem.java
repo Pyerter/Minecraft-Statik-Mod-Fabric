@@ -12,10 +12,12 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import pyerter.statik.item.ModItems;
+import pyerter.statik.util.IItemWithVariantItemGroupStacks;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class AugmentedTabletItem extends Item {
+public class AugmentedTabletItem extends Item implements IItemWithVariantItemGroupStacks {
 
     public AugmentedTabletItem(Settings settings) {
         super(settings);
@@ -29,17 +31,15 @@ public class AugmentedTabletItem extends Item {
         }
     }
 
-    /*
     @Override
-    public void appendStacks(ItemGroup group, DefaultedList<ItemStack> stacks) {
-        if (group.contains(this.getDefaultStack())) {
-            stacks.add(new ItemStack(ModItems.AUGMENTED_TABLET_ITEM));
-            for (Augment aug : Augment.getAllAugments()) {
-                stacks.add(tabletEntry(aug));
-            }
+    public List<ItemStack> getVariantStacks() {
+        List<ItemStack> stacks = new ArrayList<>();
+        stacks.add(new ItemStack(ModItems.AUGMENTED_TABLET_ITEM));
+        for (Augment aug : Augment.getAllAugments()) {
+            stacks.add(tabletEntry(aug));
         }
+        return stacks;
     }
-     */
 
     @Override
     public boolean hasGlint(ItemStack stack) {
