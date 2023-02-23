@@ -25,7 +25,7 @@ public class ModPlacedFeatures {
         // 7 veins per chunk, from y = [-40, 0], most likely to be found at y = [-22, -18]
         register(context, SEPHRINE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SEPHRINE_ORE_KEY),
                 ModOreFeatures.modifiersWithCount(7,
-                        HeightRangePlacementModifier.of(TrapezoidHeightProvider.create(YOffset.aboveBottom(20), YOffset.aboveBottom(60), 4))));
+                        HeightRangePlacementModifier.of(TrapezoidHeightProvider.create(YOffset.aboveBottom(-80), YOffset.aboveBottom(80), 4))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

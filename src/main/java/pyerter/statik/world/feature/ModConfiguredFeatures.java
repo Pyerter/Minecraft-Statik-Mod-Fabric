@@ -27,7 +27,7 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.SEPHRINE_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(stoneRepleacables, ModBlocks.DEEPSLATE_SEPHRINE_ORE.getDefaultState()));
 
-        register(context, SEPHRINE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSephrineOres, 12));
+        register(context, SEPHRINE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSephrineOres, 24));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
