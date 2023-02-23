@@ -18,9 +18,7 @@ import net.minecraft.stat.Stat;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import pyerter.statik.Statik;
-import pyerter.statik.block.custom.CaptureChamberBlock;
-import pyerter.statik.block.custom.CaptureChamberProviderBlock;
-import pyerter.statik.block.custom.GarlicCropBlock;
+import pyerter.statik.block.custom.*;
 import pyerter.statik.item.ModItemGroup;
 
 public class ModBlocks {
@@ -44,6 +42,25 @@ public class ModBlocks {
 
     public static final Block CAPTURE_CHAMBER_PROVIDER = registerBlock("capture_chamber_provider",
             new CaptureChamberProviderBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).nonOpaque().strength(2f).requiresTool()), ModItemGroup.STATIK);
+
+    public static final Block ENGINEERING_STATION = registerBlock("engineering_station",
+            new EngineeringStationBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().strength(2f).requiresTool()), ModItemGroup.STATIK);
+
+    public static final Block FOOD_PREPPING_STATION = registerBlock("food_prepping_station",
+            new FoodPreppingStationBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque().strength(2f).requiresTool()), ModItemGroup.STATIK);
+
+    public static final Block KITCHEN_STOVE_STATION = registerBlock("kitchen_stove_station",
+            new KitchenStoveStationBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().luminance(state -> {
+                if (state.get(KitchenStoveStationBlock.OVEN_LIT))
+                    return 14;
+                if (state.get(KitchenStoveStationBlock.STOVE_LIT))
+                    return 7;
+                return 0;
+            }).strength(2f).requiresTool()),
+            ModItemGroup.STATIK);
+
+    public static final Block TRIDI = registerBlock("tridi",
+            new TridiBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().strength(3f).requiresTool()), ModItemGroup.STATIK);
 
     private static Block registerOnlyBlock(String name, Block block, ItemGroup ... groups) {
         return Registry.register(Registries.BLOCK, new Identifier(Statik.MOD_ID, name), block);

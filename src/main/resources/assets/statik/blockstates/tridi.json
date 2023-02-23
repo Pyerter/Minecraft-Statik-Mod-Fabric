@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "pootsadditions:block/tridi" },
+    "facing=east": { "model": "pootsadditions:block/tridi", "y": 90 },
+    "facing=south": { "model": "pootsadditions:block/tridi", "y": 180 },
+    "facing=west": { "model": "pootsadditions:block/tridi", "y": 270 }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "statik:block/engineering_station" },
+    "facing=east": { "model": "statik:block/engineering_station", "y": 90 },
+    "facing=south": { "model": "statik:block/engineering_station", "y": 180 },
+    "facing=west": { "model": "statik:block/engineering_station", "y": 270 }
+  }
+}

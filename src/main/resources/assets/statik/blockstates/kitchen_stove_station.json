@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "ovenlit=false,stovelit=false,facing=north": { "model": "pootsadditions:block/kitchen_stove_station" },
+    "ovenlit=false,stovelit=false,facing=east": { "model": "pootsadditions:block/kitchen_stove_station", "y": 90 },
+    "ovenlit=false,stovelit=false,facing=south": { "model": "pootsadditions:block/kitchen_stove_station", "y": 180 },
+    "ovenlit=false,stovelit=false,facing=west": { "model": "pootsadditions:block/kitchen_stove_station", "y": 270 },
+
+    "ovenlit=true,stovelit=true,facing=north": { "model": "pootsadditions:block/kitchen_stove_station_lit" },
+    "ovenlit=true,stovelit=true,facing=east": { "model": "pootsadditions:block/kitchen_stove_station_lit", "y": 90 },
+    "ovenlit=true,stovelit=true,facing=south": { "model": "pootsadditions:block/kitchen_stove_station_lit", "y": 180 },
+    "ovenlit=true,stovelit=true,facing=west": { "model": "pootsadditions:block/kitchen_stove_station_lit", "y": 270 },
+
+    "ovenlit=true,stovelit=false,facing=north": { "model": "pootsadditions:block/kitchen_stove_station_oven_lit" },
+    "ovenlit=true,stovelit=false,facing=east": { "model": "pootsadditions:block/kitchen_stove_station_oven_lit", "y": 90 },
+    "ovenlit=true,stovelit=false,facing=south": { "model": "pootsadditions:block/kitchen_stove_station_oven_lit", "y": 180 },
+    "ovenlit=true,stovelit=false,facing=west": { "model": "pootsadditions:block/kitchen_stove_station_oven_lit", "y": 270 },
+
+    "ovenlit=false,stovelit=true,facing=north": { "model": "pootsadditions:block/kitchen_stove_station_stove_lit" },
+    "ovenlit=false,stovelit=true,facing=east": { "model": "pootsadditions:block/kitchen_stove_station_stove_lit", "y": 90 },
+    "ovenlit=false,stovelit=true,facing=south": { "model": "pootsadditions:block/kitchen_stove_station_stove_lit", "y": 180 },
+    "ovenlit=false,stovelit=true,facing=west": { "model": "pootsadditions:block/kitchen_stove_station_stove_lit", "y": 270 }
+  }
+}
