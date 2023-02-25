@@ -331,5 +331,8 @@ public class ModItems {
     public static void registerModItems() {
         Statik.LOGGER.info("Registering mod items.");
         Augments.registerAugments();
+
+        List<ItemStack> augmentStacks = ((AugmentedTabletItem)AUGMENTED_TABLET_ITEM).getVariantStacks();
+        addItemStacksToGroup(ModItemGroup.STATIK, augmentStacks);
     }
 }

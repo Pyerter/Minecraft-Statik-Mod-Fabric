@@ -17,7 +17,7 @@ import pyerter.statik.util.IItemWithVariantItemGroupStacks;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AugmentedTabletItem extends Item implements IItemWithVariantItemGroupStacks {
+public class AugmentedTabletItem extends Item {
 
     public AugmentedTabletItem(Settings settings) {
         super(settings);
@@ -31,7 +31,6 @@ public class AugmentedTabletItem extends Item implements IItemWithVariantItemGro
         }
     }
 
-    @Override
     public List<ItemStack> getVariantStacks() {
         List<ItemStack> stacks = new ArrayList<>();
         stacks.add(new ItemStack(ModItems.AUGMENTED_TABLET_ITEM));

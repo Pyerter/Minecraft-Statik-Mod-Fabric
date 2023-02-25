@@ -8,6 +8,7 @@ import pyerter.statik.block.ModBlocks;
 import pyerter.statik.block.entity.ModBlockEntities;
 import pyerter.statik.item.ModItemGroup;
 import pyerter.statik.item.ModItems;
+import pyerter.statik.item.custom.engineering.augment.Augments;
 import pyerter.statik.loottables.ModLootTableModifiers;
 import pyerter.statik.particle.ModParticles;
 import pyerter.statik.recipe.ModRecipes;
